@@ -2,10 +2,165 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="author" content="Sisanda Gabela">
+     <title>Home | Sisanda Gabela</title>
+
+     <!-- fonts -->
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="./styling/main.css">
+    <link rel="stylesheet" href="./styling/index.css">
+
+    <!-- js -->
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/navActive.js" defer></script>
+    <script src="./scripts/hamburgerMenu.js" defer></script>
+    
 </head>
-<body>
-    Testing testing 123
+
+<body class="indexBody">
+   <header class="mainHeader" id="mainHeader">
+  <div class="navContainer">
+
+    <!-- Logo Link (adjusted path for universal use) -->
+    <a href="index.html">
+      <img src="Images/SGlogo.png" alt="Site logo" class="siteLogo">
+    </a>
+
+    <!-- Hamburger Menu Button -->
+    <button class="hamburgerBtn" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span class="bar topBar"></span>
+        <span class="bar middleBar"></span>
+        <span class="bar bottomBar"></span>
+    </button>
+
+    <!-- DROPDOWN MENU FOR MOBILE -->
+    <nav class="mobileDropdown" id="mobileDropdown">
+      <ul class="dropdownNavList">
+        <li><a href="index.html" class="navLink">Home</a></li>
+        <li><a href="Blogs/BlogsHomepage.html" class="navLink">Blogs</a></li>
+        <li><a href="Portfolio/portfolio.html" class="navLink">Portfolio</a></li>
+        <li><a href="Design/Design.html" class="navLink">Design</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Main Navigation -->
+    <nav class="mainNav" id="mainNav" aria-label="Main navigation">
+      <ul class="navList">
+        <li><a href="index.html" class="navLink">Home</a></li>
+        <li><a href="./Blogs/BlogsHomepage.html" class="navLink">Blogs</a></li>
+        <li><a href="./Portfolio/portfolio.html" class="navLink">Portfolio</a></li>
+        <li><a href="./Design/Design.html" class="navLink">Design</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+    <div class="pageWrapper">     <!--EVERything  insie the body needs a divider for the sticky footer to Work -->
+    <!-- <div class="introBanner" id="introBanner">
+            <h1>Welcome to my website</h1>
+            <button id="nextBtn">Next</button>
+    </div> -->
+
+
+ <!-- <section class="homepageLinks">
+        <nav class="navbar" role="navigation" aria-label="Main"> list of links to main website locations -->
+                <!-- <ul> -->
+                <!-- <li><a class="navlinks" href="index.html">Home</a></li>
+                <li><a class="navlinks" href="Blogs/BlogsHomepage.html">Blogs</a></li>
+                <li><a class="navlinks" href="Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a class="navlinks" href="Design/Design.html">Design</a></li>
+                </ul>
+        </nav>  --> 
+       
+    <!-- </section> 
+        <img src="./Images/Welcome_Screen.jpg" 
+        alt="blue and white background with flowers in the forebground and text in the centre that reads_welcome" ># </a>
+    </section> -->
+    
+<section class="introBanner">
+        <h1 class="bannerTitle">Welcome to My World!</h1>
+      <!-- </section>
+<section class="aboutPage" id="aboutPage">
+      <h2>Welcome to my Home...page</h2> -->
+      <p>This is a curated space for digital expression, creative exploration, and thoughtful design.
+        Step inside and explore text, visuals, and ideas that reflect a student's mind at work through creativity,
+        and tailored with intention.</p>
+        
+        <p>Here you’ll find my weekly blog posts, class explorations, and creative updates as this
+        space continues to grow and evolve. Take your time, explore, and enjoy the journey. Get in touch if you’d like to collaborate,
+        chat about design, or are curious about the person behind the screen.
+      </p>
+</section>
+
+    <section class="aboutGrid">
+        <div class="aboutImage">
+          <img src="./Images/AboutSectionSelfie.jpg"
+              alt="A golden hour selfie of Sisanda Gabela"
+              class="aboutImagePhoto">
+        </div>
+      </section>
+
+      <div class="aboutText" id="aboutText">
+
+        <h2>Hi! I'm Sisanda Gabela</h2>
+        <p class="about">A 3rd Year Digital Arts Student at the University of the Witwatersrand</p>
+        <p class="p-location">In: Johannesburg, South Africa</p>
+
+          This site is my digital scrapbook: part progress journal, part design playground. I’m documenting my journey into UX/UI design after switching career paths 
+          (I spent a year at a different uni before finding my way here). It’s been a wild and wonderful shift filled with learning, late-night sketching, video edits, new friendships,
+           and endless style guides.
+
+          You’ll find design ideas, portfolio updates, reflections on code, rants about bugs, and the occasional meltdown turned breakthrough. I’m especially excited to grow my
+           eye for detail and build work that feels like me — thoughtful, playful, and intentional.
+          
+          The goal is to get really good at this. I want to be mentored by powerful women in the industry, create things I haven’t even imagined yet, and prove to myself that being 
+          a noob is just the start of something big.  This is my journey into UX/UI design.</p>
+      </div>
+    </section>
+
+     <!-- Skills and Languages Grid -->
+      <section class="skillsLanguagesGrid">
+        <div class="skillsBox">
+          <h3>Skills</h3>
+          <ul class="iconList">
+            <li><img src="./Icons/html.png" alt="HTML" /></li>
+            <li><img src="./Icons/css.png" alt="CSS" /></li>
+           
+            
+          </ul>
+        </div>
+        <div class="languagesBox">
+          <h3>Languages</h3>
+          <ul class="languageList">
+            <li>English: ⭐⭐⭐⭐⭐</li>
+            <li>Afrikaans: ⭐⭐⭐⭐</li>
+            <li>Spanish:⭐⭐⭐</li>
+            <li>Zulu:⭐⭐⭐</li>
+         </ul>
+        </div>
+      </section>
+
+       <!-- Bottom nav buttons -->
+      <section class="bottomButtons">
+        <a href="./Blogs/BlogsHomepage.html" class="roundButton">Blogs</a>
+        <a href="./Portfolio/portfolio.html" class="roundButton">Portfolio</a>
+        <a href="./Design/Design.html" class="roundButton">Design</a>
+      </section>
+    </main>
+
+    <footer class="mainFooter">
+    <section class="contactSection">
+        <p>Get in touch!</p>
+        <ul class="h-card">
+            <li><a href="mailto:2496473@students.wits.ac.za"> <img src="./Images/email-heart.png" alt="Email icon" width="50"></a></li>
+            <li><a href="https://www.linkedin.com/in/sisanda-g-96047a289/" target="_blank"></a> <img src="./Images/linkedin (1).png" alt="LinkedIn icon" width="52"></li>
+            <li><a href="https://github.com/SpiceyGabs?tab=repositories" target="_blank"> <img src="./Images/github (1).png" alt="Github icon" width="50"></a></li>
+       </ul>
+        <p class="copyright">&copy; Sisanda Gabela, Portfolio Website-2025</p>
+      </section>
+    </footer>
+  </div>
 </body>
 </html>
