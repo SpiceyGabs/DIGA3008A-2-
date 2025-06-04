@@ -1,0 +1,89 @@
+.portfolioGallery {
+  padding: 2rem;
+}
+
+.portfolioFilters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  padding: 0.5rem 1rem;
+  border: 2px solid #059cf9;
+  background-color: beige;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #003366;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover,
+.filterButton.activeFilter {
+  background-color: #059cf9;
+  color: white;
+}
+
+/* Carousel structure reused from Design */
+.carouselWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.portfolioCard {
+  flex: 0 0 300px;
+  background-color: #f7f5f4;
+  color: #04254f;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  scroll-snap-align: start;
+  position: relative;
+}
+
+/* Arrow buttons */
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(255, 255, 255);
+  color: #003366;
+  border: 2px solid #003366;
+  padding: 0.8rem 1.2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+.rightArrow {
+  right: 10px;
+}
+
+.carouselArrow:hover {
+  background-color: #059cf9;
+  color: white;
+}
+
+/* Video styling inside of the cards */
+.portfolioVideo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1rem 0;
+}

@@ -1,0 +1,128 @@
+
+
+/* Intro Banner...I GIVE UP*/
+/* .introBanner {
+  height: 100vh;
+  background-color: rgba(2, 2, 65, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../Images/Welcome_Screen.jpg);
+  background-size: 1000px;
+} */
+
+.bannerTitle {
+  font-size: 3rem;
+  color: rgb(22, 34, 101);
+}
+
+.aboutImage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  /* animation: forwards 0.5s ease-in; */
+}
+
+.aboutImagePhoto {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1; /* Ensures square shape */
+  object-fit: cover;
+  border-radius: 20px; /* Soft round corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 4px solid #ffffff; /* white border */
+}
+
+/*About*/ 
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem;
+  
+}
+
+.aboutImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.aboutText {
+  font-size: 1rem;
+  justify-content: flex-end;
+}
+
+/*Skills and languages*/
+.skillsLanguagesGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 3rem;
+}
+
+.skillsBox, .languagesBox {
+  background-color: #f7f5f4;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.languageList {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+/* 
+.intro-banner {
+    height: 100vh;
+    background-image: url(../Images/Welcome_Screen.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out;
+} */
+/* 
+.introBanner h1 {
+    font-size: 2.5rem;
+    opacity: 0;
+    animation: fadeIn 1.6s forwards;
+} */
+
+/* #nextBtn {                    /*I must admit, I fixed this and the keyframes using AI, sorry */
+/* margin-top: 1rem;
+padding: 0.7rem 1.5rem;
+font-size: 1rem;
+cursor: pointer;
+opacity: 0;
+animation: fadeIn 2s 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+} */
+
+/*This hides nav at first */
+/* .mainHeader {
+    margin-top: 100vh;
+    padding: 1rem;
+    background: white;
+    position: relative;
+    z-index: 10;
+}
+
+#aboutPage {
+  padding: 2rem;
+  background: #f4f4f4;
+  min-height: 100vh;
+} */
