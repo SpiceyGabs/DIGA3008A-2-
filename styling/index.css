@@ -75,6 +75,11 @@
   padding-left: 1rem;
 }
 
+.iconlist {
+  width: 10rem;
+  height: 10rem;
+  list-style: none;
+}
 /* 
 .intro-banner {
     height: 100vh;
