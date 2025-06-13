@@ -7,41 +7,53 @@ document.addEventListener('DOMContentLoaded', () => {
   const allCards = document.querySelectorAll('.portfolioCard');
   const cardWidth = 300 + 32; // 300px + margin/gap
 
-  let scrollPosition = 0;
+  //let scrollPosition = 0;
 
   // Arrows scroll
-  rightArrow.addEventListener('click', () => {
-    scrollPosition += cardWidth;
-    track.scrollTo({ left: scrollPosition, behavior: 'smooth' });
-  });
+  // rightArrow.addEventListener('click', () => {
+  //   scrollPosition += cardWidth;
+  //   track.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+  // });
 
-  leftArrow.addEventListener('click', () => {
-    scrollPosition -= cardWidth;
-    if (scrollPosition < 0) scrollPosition = 0;
-    track.scrollTo({ left: scrollPosition, behavior: 'smooth' });
-  });
+  // leftArrow.addEventListener('click', () => {
+  //   scrollPosition -= cardWidth;
+  //   if (scrollPosition < 0) scrollPosition = 0;
+  //   track.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+  // });
 
   // Filters logic
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const category = button.dataset.category;
+  // filterButtons.forEach(button => {
+  //   button.addEventListener('click', () => {
+  //     const category = button.dataset.category;
 
-      // Sets active button style
-      filterButtons.forEach(btn => btn.classList.remove('activeFilter'));
-      button.classList.add('activeFilter');
+  //     // Sets active button style
+  //     filterButtons.forEach(btn => btn.classList.remove('activeFilter'));
+  //     button.classList.add('activeFilter');
 
-      // Shows/hides cards
-      allCards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+  //     // Shows/hides cards
+  //     allCards.forEach(card => {
+  //       if (category === 'all' || card.dataset.category === category) {
+  //         card.style.display = 'flex';
+  //       } else {
+  //         card.style.display = 'none';
+  //       }
+  //     });
 
-      // Resets scroll position
-      scrollPosition = 0;
-      track.scrollTo({ left: 0, behavior: 'auto' });
-    });
+  //     // Resets scroll position
+  //     scrollPosition = 0;
+  //     track.scrollTo({ left: 0, behavior: 'auto' });
+  //   });
+  // });
+ //});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".carouselContainer");
+
+  carousels.forEach(carousel => {
+    const track = carousel.querySelector(".carouselTrack");
+    const secondItem = track.children[1]; // second card
+    if (secondItem) {
+      track.scrollLeft = secondItem.offsetLeft - 20; // smooth position
+    }
   });
 });
