@@ -281,14 +281,17 @@
   color: white;
 }
 
-.link{
+.link, href  {
   text-decoration: none;
   color: #111;
   hover: rgb(10, 10, 180);
 }
 
 
-
+.heading  {
+ text-decoration: underline;
+ font-weight: bold;
+}
 
 
 
