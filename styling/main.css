@@ -465,10 +465,14 @@ main{
 } */
 
 /* Sticky footer */
-.page-wrapper {
+.pageWrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Full viewport height */
+}
+
+main {
+  flex: 1;
 }
 
 /* Footer */
