@@ -451,13 +451,13 @@ main{
 /* Footer */
 footer {
     border-top: 2px solid;
-    color: #75757576;
+   /* color: #75757576; */
     padding-bottom: 1rem;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     text-decoration: solid;
-    background-color: #2f4156;
+    background-color: #374c64;
     width: 100%;
     box-sizing: border-box;
 }
@@ -469,11 +469,11 @@ footer {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    background-color: #2f4156;
+    background-color: #374c64;
 }
 
 .h-card li {
-    background-color: #2f4156;
+    background-color: #374c64;
 }
 
 .h-card img {
@@ -499,14 +499,14 @@ footer {
     margin: 0 0 0.5em 0; /* remove big bottom margin, keep small spacing */
     padding: 0;
     line-height: 1.2; /* tighter line height */
-    background-color: #2f4156;
+    background-color:#374c64;
 }
 
 footer ul {
     margin: 0;
     padding-left: 0em; 
     padding-top: 0rem;
-    background-color: #2f4156;
+    background-color: #374c64;
 
 }
 

@@ -49,21 +49,64 @@
       </div>
     </header>
     <main>
+
     <section class="blogPost">
         <p>By <span class="p-author h-card"> Sisanda Gabela.</span> 
         <time class="dt-published" datetime="2025-06-13"> 13/06/2025 </time>
 
-    <h3>  </h3>
+    <h3> Final Reflection on the Implementation of the Website</h3>
+    <h4> My mountains, mole hills and lessons in web development</h4>
+
     <article class="h-entry">   
         <div class="e-content" > 
- <p></p>
- <p></p>
- <p></p>
+ 
+          <p class="heading">Introduction:  </p>
+          <p> As you can see from the title, this document outlines the development process and design decisions behind my web development process and final website. It will highlight how each technical and creative aspect I have chosen to utilise in my final project connects to my ongoing learning journey. It serves both as an academic reflection and a personal narrative  </p>
+           
+          <p class="heading">Folder structure:   </p>
+          <p>A well-organized folder structure is essential for maintaining a scalable and maintainable codebase. My folder hierarchy reflects the logical organization of content and functionality, grouping related files together to mirror the information architecture of the site. This aided in creating clarity for myself when adding new files or revisiting code. This is something I did and redid a few times following constructive feedback from previous projects. It is best to have a clean folder structure, free from empty files and practice folders when working on something that I am hoping many people will see. In the end, I decided to have separate folders for HTML, CSS, JavaScript, and assets, keep concerns delineated, and to avoid referencing folders that are buried in an endless cycle of folders. Hopefully, everything I have now aligns with best practices in web development. It is modular and scalable.    </p>
+           
+          <p class="heading">Semantic Markup:  </p>
+          <p>The use of semantic HTML elements ensures the site is accessible and meaningful both to users and search engines. One of the most effective ways I ensured clarity, accessibility, and machine-readability in my code was through the intentional use of semantic HMTL markups and microformats. I have improved and made use of elements such as header, main, article, div, section, aside. These elements provide clear structural cues, improving readability and navigation within my code. Such a semantic approach supports assistive technologies (a goal of mine), but also strengthens SEO performance, reflecting a balance between technical and ethical considerations in design, for both people and machines (like screen reader, web crawlers etc)    </p>
+          <p>I have made use of microformats such as h-card to structure author information; h-entry for my blog posts, essays and this reflection; p- name, -author, date-published, and e-content to mark the details such as the title, author(me) publication date and entry body. Some of these things are good for sorting and providing the relevant or geographical context.  I was scared to use spans at first but now that I understand why they are used, they have been used a few times within my code. They are used for inline styling and micro-interactions (eg, highlighting a word or icon without disrupting the semantic flow despite not being a semantic element). I combined these with ARIA labels to enhance accessibility.  </p>
+           
+          <p class="heading">Metadata:  </p>
+          <p>The purpose of this is to enhance discoverability and sharing capabilities. I kept it short by only adding an author tag, the title of the page and will expand to further include a description of the content found on the page. I would have liked to spam keywords here, but I learned that this is an outdated practice.    </p>
+           
+          <p class="heading">CSS:  </p>
+          <p>The CSS styling shows and incorporates my updated colour palette. I deviated from my first colour palette to create a cleaner, professional, and accessible visual experience. Visual design is the backbone and key aspect of front-end development. Each colour has been chosen for its specific emotional and functional role:</p>
+            <ul>
+                <li>Light taupe (e5e0d9): Used primarily for section backgrounds (like cards and blog areas), this soft neutral creates warmth and spaciousness without overpowering the written content.  </li>
+                <li>Marine blue (2b5288): Applied in headings and key UI elements, this colour conveys trust, stability, and professionalism, whilst contrasting the background quite nicely.   </li>
+                <li>Navy (3214156): Used as the main text colour on beige backgrounds, this deep tone ensures strong contrast for readability and visual comfort as well.   </li>
+                <li>Darker and lighter shades of these colours: Used thoughtfully for hover states, borders, and accents, enhancing depth and interactivity. </li>
+                <li>Black and white: Used sparingly to support contrast and clarity, particularly for text and backgrounds when needed. </li>
+            </ul>
+            <p>Maybe the developer in me will awaken and integrate more CSS-based animations? Otherwise, all my styling remains on a page's relevant CSS file and the main.css stylesheet. </p>
 
- <h3>References and Inspiration</h3>
+           <p class="heading">JavaScript:  </p>
+          <p>JavaScript enriches the user experience by enabling dynamic features such as interactive menus, buttons, transitions and quick content updates. DOM (Document Object Model) manipulation was a key part of enhancing interactivity and responsiveness across my site. By using JavaScript to access and modify the structure, content, and style of HTML elements in real time, I created a more dynamic and engaging experience for users. DOM manipulation allowed me to make content changes without needing to reload the page. For example, toggling dropdown menus, switching between blog categories, or highlighting a selected project all rely on live updates to the DOM. As I refined my JavaScript, I became more intentional about how interaction points were managed and how functionality was structured to stay clean, reusable, and performance-aware or performance conscious.    </p>
+          <p>I avoided inline JavaScript in my HTML to maintain separation of concerns. All my js is stored in an external JavaScript folder in use specific JavaScript files. And I linked the JavaScript file at the top of every page. I have not fully implemented async fetch requests yet, but I plan to explore using fetch() or AJAX to load blog content or video previews dynamically. This would reduce unnecessary reloading and improve UX especially for my blog pages (e.g. the page will load 3 entries at a time, then show a “Load more” button like in earlier iterations of fashion websites like Shein, I think it keeps the page clean and not overload the users cognitive load with the idea of endless choices.) and for embedding videos or large media (e.g. fetch will preview thumbnails only when needed). By deferring heavy content loads until user interaction, I can improve performance (my site will load quicker) and use less data/ not waste data which in important in South Africa where access to the internet is limited in most areas and data is expensive.   </p>
 
+          <p class="heading">Final thoughts on the UI and UX:  </p>
+          <p> Throughout this project, my UI and UX choices were shaped by a mix of design intention, technical ambition, and (to be quite honest) the pressure of deadlines and meeting the brief. While I aimed for a user-centred approach, I also made some decisions based more on what I could accomplish over short periods, rather than what users might intuitively need. Building this site was not just a continuous design task, but it was a full-body learning experience. I have grown from just “making things work” to thinking critically about what I am making and why I am making it that way. User experience design (emphasis on experience design) is not just about aesthetics, but empathy, clarity, consideration and meeting users where they are, both literally (geographically) and mentally (taking the time to consider their habits and prior knowledge of how they make use of the internet). The important thing is that my foundation is now solid, flexible, and built with future growth in mind.   </p>
+          
     </div>
     </section>
     </main>
+
+    <footer>
+    <section class="contact">
+        <nav id="footer-nav" aria-label="contact">  <!-- list of links to main contact locations -->
+            <ul class="h-card">
+            <li><a href="mailto:2496473@students.wits.ac.za"> <img src="../Images/email-heart.png" alt="Email icon" width="35"></a></li>
+            <li><a href="https://www.linkedin.com/in/sisanda-g-96047a289/" target="_blank"></a> <img src="../Images/linkedin (1).png" alt="LinkedIn icon" width="40"></li>
+            <li><a href="https://github.com/SpiceyGabs?tab=repositories" target="_blank"> <img src="../Images/github (1).png" alt="Github icon" width="35"></a></li>
+        </ul>
+        </nav>
+    </section>
+        <p class="copyright">&copy; Sisanda Gabela for Wits Digital Arts, 2025.</p>
+    </footer>
+    </div>
 </body>
 </html>
