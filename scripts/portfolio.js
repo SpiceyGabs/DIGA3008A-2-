@@ -1,11 +1,11 @@
 // portfolioCarousel.js
-document.addEventListener('DOMContentLoaded', () => {
-  const track = document.querySelector('#portfolioCarouselTrack');
-  const leftArrow = document.querySelector('.leftArrow');
-  const rightArrow = document.querySelector('.rightArrow');
-  const filterButtons = document.querySelectorAll('.filterButton');
-  const allCards = document.querySelectorAll('.portfolioCard');
-  const cardWidth = 300 + 32; // 300px + margin/gap
+// document.addEventListener('DOMContentLoaded', () => {
+//   const track = document.querySelector('#portfolioCarouselTrack');
+//   const leftArrow = document.querySelector('.leftArrow');
+//   const rightArrow = document.querySelector('.rightArrow');
+//   const filterButtons = document.querySelectorAll('.filterButton');
+//   const allCards = document.querySelectorAll('.portfolioCard');
+//   const cardWidth = 300 + 32; // 300px + margin/gap
 
   //let scrollPosition = 0;
 
