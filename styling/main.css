@@ -403,10 +403,12 @@ main{
 }
 
 .portfolioBody{
-    background-image: url("../Images/SoftBackgroundStar.jpg");
+    background-image: url("../Images/FlowerBackground.png");
     padding: 0rem;
     margin: 0rem; 
+    background-size:cover;
     size: 100rem;
+    background-repeat: repeat;
 }
 
 .homepageLinks{
